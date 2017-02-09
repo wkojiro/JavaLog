@@ -13,10 +13,13 @@ class Human extends Animal implements Thinkable {
      // クラス変数
     static String to_jp = "日本人";
 
-    String hobby = "趣味";
 
-    public Human(String name, int age){
+    //メンバ変数
+    String hobby; //新たに追加されたメンバ変数
+
+    public Human(String name , String hobby, int age){
         this.name = name;
+        this.hobby = hobby;
         this.age = age;
     }
 
@@ -26,7 +29,7 @@ class Human extends Animal implements Thinkable {
 
     // メンバ関数
     public void say() {
-        Log.d("javatest", "私の名前は" + this.name + "です。年は" + this.age + "歳)" + "です。");
+        Log.d("javatest", "私の名前は" + this.name + "です。年は" + this.age + "歳です。");
     }
 
     @Override
