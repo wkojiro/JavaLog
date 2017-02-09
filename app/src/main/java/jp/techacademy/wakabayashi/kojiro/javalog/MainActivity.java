@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {   //public どこからで
         Log.d("javatest", "犬の年齢は" + bigdog.age + "歳です。");
 
 
-        Human human = new Human("Tom",5);
+        Human human = new Human("Tom", "趣味" , 5);
 
         human.say();
         human.think();
